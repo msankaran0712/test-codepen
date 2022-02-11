@@ -1,25 +1,31 @@
-const Grid = ReactBootstrap.Grid;
-const Row = ReactBootstrap.Row;
-const Col = ReactBootstrap.Col;
-const Input = ReactBootstrap.Input;
-const Button = ReactBootstrap.Button;
-const ButtonToolbar = ReactBootstrap.ButtonToolbar;
-const ButtonGroup = ReactBootstrap.ButtonGroup;
-const OverlayTrigger = ReactBootstrap.OverlayTrigger;
-const Jumbotron = ReactBootstrap.Jumbotron;
-const Glyphicon = ReactBootstrap.Glyphicon;
-const Tooltip = ReactBootstrap.Tooltip;
-const Modal = ReactBootstrap.Modal;
+// Based off https://github.com/ForbesLindesay/umd/blob/master/template.js
+;(function(f) {
+  // CommonJS
+  if (typeof exports === "object" && typeof module !== "undefined") {
+    module.exports = f(require('react-bootstrap'));
 
+  // RequireJS
+  } else if (typeof define === "function" && define.amd) {
+    define(['react-bootstrap'], f);
 
-export Grid
-export Row
-export Col
-export Input
-export Button
-export ButtonToolbar
-export OverlayTrigger
-export Jumbotron
-export Glyphicon
-export ToolTip
-export Modal
+  // <script>
+  } else {
+    var g
+    if (typeof window !== "undefined") {
+      g = window;
+    } else if (typeof global !== "undefined") {
+      g = global;
+    } else if (typeof self !== "undefined") {
+      g = self;
+    } else {
+      // works providing we're not in "use strict";
+      // needed for Java 8 Nashorn
+      // see https://github.com/facebook/react/issues/3037
+      g = this;
+    }
+    g.TestReactBootstrap = f(g["react-bootstrap"]);
+  }
+
+})(function() {
+  //
+});
