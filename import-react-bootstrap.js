@@ -24,7 +24,7 @@
       g = this;
     }
     console.log(g);
-    g.TestReactBootstrap = g.ReactBootstrap;
+    g.Button= g.ReactBootstrap.Button;
   }
 
 })(function() {
