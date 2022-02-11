@@ -23,6 +23,7 @@
       // see https://github.com/facebook/react/issues/3037
       g = this;
     }
+    console.log(g);
     g.TestReactBootstrap = f(g["react-bootstrap"]);
   }
 
