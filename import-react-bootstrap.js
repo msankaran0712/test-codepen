@@ -28,5 +28,5 @@
   }
 
 })(function() {
-  source() //trick uglify-js into not minifying
+  //source() 
 });
