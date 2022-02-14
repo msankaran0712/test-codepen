@@ -23,11 +23,10 @@
       // see https://github.com/facebook/react/issues/3037
       g = this;
     }
-    console.log(g);
-    g.TestButton= f(g.ReactBootstrap);
-    console.log(g.TestButton)
+    g.Chip= f(g.ReactBootstrap);
+    
   }
 
 })(function(ReactBootstrap) {
-    return ReactBootstrap.Button; 
+    return ReactBootstrap.Chip; 
 });
