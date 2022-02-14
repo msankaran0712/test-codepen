@@ -28,5 +28,5 @@
   }
 
 })(function(ReactBootstrap) {
-    return ReactBootstrap.Button; 
+    return ReactBootstrap.Button(); 
 });
