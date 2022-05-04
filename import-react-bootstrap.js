@@ -23,10 +23,10 @@
       // see https://github.com/facebook/react/issues/3037
       g = this;
     }
-    g.Chip= f(g.ReactBootstrap);
+    g.Form= f(g.ReactBootstrap);
     
   }
 
 })(function(ReactBootstrap) {
-    return ReactBootstrap.Chip; 
+    return ReactBootstrap.Form; 
 });
